@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMapActivity">
+
+    <EditText
+        android:id="@+id/edituserTextCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Current Location"
+        android:textColor="@color/purple_500" />
+
+    <EditText
+        android:id="@+id/edituserTextDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edituserTextCurrentLocation"
+        android:hint="Enter Destination"
+        android:textColor="@color/purple_500" />
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinnerDestination"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/editTextCurrentLocation"-->
+    <!--        android:hint="Select Destination"-->
+    <!--        android:textColor="@color/purple_500" />-->
+
+    <Button
+        android:id="@+id/buttonuserShowMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edituserTextDestination"
+        android:layout_centerHorizontal="true"
+        android:text="Show Map" />
+
+    <WebView
+        android:id="@+id/userwebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonuserShowMap"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/buttonuserback"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="317dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="593dp"
+        android:text="Back"
+        android:textSize="12sp" />
+
+</RelativeLayout>

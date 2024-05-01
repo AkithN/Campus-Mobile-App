@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Colombo City Main Campus</string>
+
+    <string-array name="branches">
+        <item>Matara</item>
+        <item>Kandy</item>
+        <item>Negombo</item>
+        <item>Colombo</item>
+        <item>Jaffna</item>
+        <item>Kegalle</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Piliyandala</item>
+        <item>Kottawa</item>
+    </string-array>
+
+    <string-array name="duration">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+    </string-array>
+</resources>
+

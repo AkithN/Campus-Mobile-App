@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "703448531956",
+    "project_id": "database-e2970",
+    "storage_bucket": "database-e2970.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703448531956:android:e6362ffb09346a24402fa1",
+        "android_client_info": {
+          "package_name": "com.example.gmail9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703448531956-4bjlmgr7mnnc164mbjtuk6lu1rt0pe0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWcIU9UAEmAlCUE9sXZWvXamv2AKWrYBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703448531956-4bjlmgr7mnnc164mbjtuk6lu1rt0pe0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

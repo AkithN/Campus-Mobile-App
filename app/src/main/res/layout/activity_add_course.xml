@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Manage Course"
+        android:textAlignment="center"
+        android:textColor="@color/lavender"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp" />
+
+    <!-- Course Name -->
+    <EditText
+        android:id="@+id/editText_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_title"
+        android:layout_marginTop="24dp"
+        android:hint="Course Name"
+        android:inputType="text" />
+
+    <!-- Course Fee -->
+    <EditText
+        android:id="@+id/editText_course_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_course_name"
+        android:layout_marginTop="24dp"
+        android:hint="Course Fee"
+        android:inputType="numberDecimal" />
+
+    <!-- Branches Spinner -->
+    <Spinner
+        android:id="@+id/spinner_branches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_course_fee"
+        android:layout_marginTop="24dp"
+        android:hint="Select Branch"
+        android:entries="@array/branches" />
+
+    <!-- Duration Spinner -->
+    <Spinner
+        android:id="@+id/spinner_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_branches"
+        android:layout_marginTop="24dp"
+        android:hint="Select Duration"
+        android:entries="@array/duration" />
+
+    <!-- Starting Date -->
+    <EditText
+        android:id="@+id/editText_starting_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_duration"
+        android:layout_marginTop="24dp"
+        android:hint="Starting Date"
+        android:inputType="date" />
+
+    <!-- Registration Close Date -->
+    <EditText
+        android:id="@+id/editText_registration_close_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_starting_date"
+        android:layout_marginTop="24dp"
+        android:hint="Registration Close Date"
+        android:inputType="date" />
+
+    <!-- Max Participants -->
+    <EditText
+        android:id="@+id/editText_max_participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_registration_close_date"
+        android:layout_marginTop="24dp"
+        android:hint="Max Participants"
+        android:inputType="number" />
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/first_row_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/second_row_buttons"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/b_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Add Course" />
+
+        <Button
+            android:id="@+id/b_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Update Course" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_row_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/b_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/b_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Search" />
+
+    </LinearLayout>
+
+</RelativeLayout>
